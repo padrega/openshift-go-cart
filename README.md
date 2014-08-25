@@ -3,11 +3,11 @@ OpenShift Go Cartridge
 
 Runs [Go](http://golang.org) on [OpenShift](https://openshift.redhat.com/app/login) using downloadable cartridge support.  To install to OpenShift from the CLI (you'll need version 1.9 or later of rhc), run:
 
-    rhc create-app mygo https://cartreflect-claytondev.rhcloud.com/reflect?github=smarterclayton/openshift-go-cart
+    rhc create-app mygo https://cartreflect-claytondev.rhcloud.com/reflect?github=padrega/openshift-go-cart
 
 Once the app is created, you'll need to create and add a ".godir" file in your repo to tell the cartridge what the package of your Go code is.  A typical .godir file might contain:
 
-    github.com/smarterclayton/goexample
+    github.com/padrega/goexample
 
 which would tell OpenShift to place all of the files in the root of the Git repository inside of the <code>github.com/smarterclayton/goexample</code> package prior to compilation.
 
